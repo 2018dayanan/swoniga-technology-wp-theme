@@ -1,0 +1,943 @@
+/*
+Theme Name: Swoniga Technology
+Theme URI: https://swonigatechnology.com/swonigatech
+Author: Binod Bhagat
+Author URI: https://binodbhagat.com.np
+Description: Software development company
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: swonigatech
+*/
+/*  Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  */
+
+
+
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #167abf;
+    --primary-dark: #000;
+    --white-color: #fff;
+    --border-color: #eaecee;
+    --subtitle-color: #475e75;
+    --gray-white-text-color: #999;
+    --title-font-size: 1rem;
+    --sub-title-font-size: .775rem;
+    --footer-text-size: .87rem;
+    --subtitle-line-height: 1.5;
+    --section-title-font-size: 2.7rem;
+    --section-title-font-width: bold;
+    --section-padding: 48px 0;
+
+}
+
+img {
+    width: 100%;
+}
+/* Button */
+.swtech_button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid var(--primary-color);
+    transition: 0.5s;
+
+}
+.swtech_button:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+/* Button */
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--subtitle-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+    border: 1px solid var(--subtitle-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* End of Custom Scrollbars */
+body {
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+/* ========================*/
+/* =======Navbar Css ====== */
+/* ======================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 111;
+}
+
+.custom-logo-link img {
+    width: 150px !important;
+    height: auto !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0 !important;
+    color: #fff;
+}
+
+
+
+.nav-link {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar {
+    background: var(--primary-color) !important;
+    /* height: 64px; */
+}
+/* 
+.dropdown-menu {
+    padding: 0.5em;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background: #efefef;
+    padding: 20px 20px;
+} */
+
+
+/* .dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+/* .dropdown-menu ul li {
+    margin-left: 20px;
+
+} */
+
+/* .dropdown-menu li a {
+    color: gray;
+    padding: 0.5em 1em;
+    font-weight: 400;
+    font-size: 0.876rem !important;
+} */
+
+/* .dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #3c3c3c;
+    font-weight: 400;
+
+
+} */
+
+/* .dropdown-menu li:nth-child(2) {
+    margin-top: 20px;
+} */
+
+/* .dropdown-menu ul li a:hover {
+    text-decoration: underline;
+    color: #3c3c3c !important;
+
+
+} */
+
+/* .dropdown-menu ul li:first-child {
+    border-bottom: 1px solid #d3d3d3;
+
+} */
+
+/* 
+@media(min-width:993px) {
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+    }
+
+} */
+
+/* @media(max-width:992px){
+
+    .dropdown-menu{
+      overflow: scroll;
+      max-height: 60vh;
+    }
+} */
+
+/* @media(max-width: 768px) {
+    .dropdown-menu ul li:first-child {
+        border-bottom: 0px solid;
+        margin-left: 0;
+    }
+} */
+
+/* ============================ */
+/* ====== Single Page Css ======== */
+/* ============================ */
+
+
+#custom_single_post .top_header {
+    min-height: 200px;
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-width);
+    position: relative
+}
+
+#custom_single_post .top_header .top_header_title .post_title h1 {
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-width);
+    text-shadow: 2px 2px 10px 2px #efefef;
+    color: var(--white-color);
+    margin-bottom: 0 !important;
+}
+
+#custom_single_post .top_header .top_header_title .post_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    min-height: 100px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#custom_single_post .post_description {
+    padding: 70px 0 50px 0;
+    text-align: justify;
+    /* font-size: var(--sub-title-font-size); */
+    line-height: var(--subtitle-line-height);
+
+}
+
+/* ============================ */
+/* ====== Hero section ======== */
+/* ============================ */
+.hero-bg {
+    background: linear-gradient(to right, #fff, #0000), url(../assets/images/bg-image.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: 200px 00px;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-text h1 {
+    font-weight: var(--section-title-font-width);
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 1.5;
+}
+
+
+
+.hero-text 
+
+.hero-text p {
+    line-height: 1.4;
+    /* font-size: 1rem; */
+}
+
+
+/* ===================================================== */
+/* ========== Floating Action Contact Button ===========  */
+/* ===================================================== */
+#floating {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+#floating .contact-icon .fa-solid {
+    color: var(--white-color);
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+
+
+}
+
+.contact-box .con-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ===================================================== */
+/* ===================== Services ====================== */
+/* ===================================================== */
+#services {
+    padding: var(--section-padding)
+}
+
+#services .services-text {
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-width);
+}
+
+.all_services {
+    min-height: 800px;
+}
+
+.box {
+    transition: 0.5s ease;
+    /* margin-bottom: 40px; */
+    /* height: 260px; */
+    margin: 40px 0;
+
+}
+
+.box:hover {
+    transform: scale(1.08);
+}
+
+.box .box-inner .image {
+    margin-bottom: 26px;
+
+}
+
+.box .box-inner .image img {
+    text-align: center;
+    display: block;
+    height: 150px;
+    width: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.box .box-inner .image .fa-brands {
+    font-size: 50px;
+    color: #9e9e9e;
+}
+
+.box .box-inner {
+    box-shadow: 0 0 20px 5px #c6c6c633;
+    padding: 30px 16px;
+}
+
+.box .box-inner .box-title h1 {
+    font-size: 19px;
+    color: var(--subtitle-color);
+}
+
+.box .box-inner .box-subtitle p {
+    font-size: 0.76rem;
+    line-height: 1.5;
+    color: #727272;
+    font-weight: 400;
+}
+
+.box .box-inner .box-link a {
+    color: #006799;
+    text-decoration: none;
+    font-size: var(--title-font-size)
+}
+
+.box .box-inner .box-link a:hover {
+    text-decoration: underline;
+}
+
+.box .box-inner .box-link a .fa-solid {
+    font-size: 12px;
+}
+
+/* ===================================================== */
+/* ========== Professional Training ==================== */
+/* ===================================================== */
+#professional_training {
+    padding: 48px 0;
+    background: #f5f6f7;
+}
+
+#professional_training .professional_training_title {
+    font-size: 2.7rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#professional_training .subtext_list {
+    list-style-type: none;
+}
+
+#professional_training .subtext_list .subtext_list_item:first-child {
+    font-weight: bold;
+    color: #475e8b;
+}
+
+#professional_training .subtext_list .subtext_list_item {
+    display: inline-block;
+    font-size: var(--sub-title-font-size);
+}
+
+#professional_training .subtext_list .subtext_list_item:not(:first-child)::before {
+    display: inline-flex;
+    content: "•";
+    padding-right: 0.5rem;
+    color: #475e75;
+    font-size: 10px;
+    align-items: center;
+}
+
+#professional_training .training_card {
+    background: var(--white-color);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    position: relative;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#professional_training .training_card:hover {
+    box-shadow: 0px 8px 16px 0px #5b738b33, 0px 0px 2px 0px #5b738b33;
+}
+
+#professional_training .training_card::before {
+    content: "";
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    top: 1.5rem;
+    left: -1px;
+    background-color: #5dc122;
+    width: 8px;
+    height: 32px;
+}
+
+#professional_training .training_card .training_card_title {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    /* color: var(--primary-color); */
+}
+
+#professional_training .training_card .training_card_title a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#professional_training .training_card .read_more_text {
+    font-size: var(--sub-title-font-size);
+    line-height: 1.5;
+    font-weight: 400;
+    color: #475e75;
+}
+
+#professional_training .training_card .tag_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#professional_training .training_card .tag_list p {
+    border-radius: 20px;
+    padding: .5rem .75rem;
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    background-color: #f5f6f7;
+    font-size: var(--sub-title-font-size);
+    line-height: 1.15;
+    font-weight: 600;
+    color: #475e75;
+    margin: 5px 2px;
+}
+
+
+
+/* =================================== */
+/* ========== Blog ==================== */
+/* ==================================== */
+#blog_section {
+    padding: var(--section-padding);
+}
+
+.blog-top-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#blog_section .blog-top-title .blog-top-title-left h1 {
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-width);
+}
+
+#blog_section .blog-top-title .blog-top-title-right a {
+    color: var(--primary-color);
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 10px;
+    font-size: var(--title-font-size);
+}
+
+#blog_section .blog-top-title .blog-top-title-right a:hover {
+    text-decoration: underline;
+}
+
+#blog_section .blog-top-title .blog-top-title-right a .fa-solid {
+    color: var(--primary-color);
+
+}
+
+#blog_section .blog-card {
+    transition: 0.5s ease;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px #5b738b33, 0px 0px 2px 0px #5b738b33;
+}
+
+#blog_section .blog-card:hover {
+    transform: translateY(-8px);
+}
+
+#blog_section .blog-card .blog-card-image {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    height: 180px;
+
+}
+
+#blog_section .blog-card .blog-card-image img {
+    display: block;
+    object-fit: cover;
+    height: auto;
+
+
+}
+
+#blog_section .blog-card .blog-card-image .blog-card-author {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary-color)
+}
+
+#blog_section .blog-card .blog-card-image .blog-card-author span {
+
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: var(--sub-title-font-size);
+
+}
+
+#blog_section .blog-card .blog-info {
+    padding: 10px 10px 20px 10px;
+}
+
+#blog_section .blog-card .blog-info .blog-card-title h1 {
+    font-size: 1.2rem;
+    padding: 14px 0 0px 0;
+}
+
+#blog_section .blog-card .blog-info .blog-card-title h1 a {
+    color: var(--subtitle-color);
+    text-decoration: none;
+
+}
+
+#blog_section .blog-card .blog-info .blog-card-description p {
+    font-size: var(--sub-title-font-size);
+    color: var(--subtitle-color);
+
+}
+
+#blog_section .blog-card .blog-info .blog-card-button a {
+    font-size: var(--title-font-size);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#blog_section .blog-card .blog-info .blog-card-button a:hover {
+    text-decoration: underline;
+}
+
+#blog_section .blog-card .blog-info .blog-card-button a .fa-solid {
+    color: var(--primary-color);
+    font-size: var(--title-font-size);
+
+
+}
+
+/* =================================== */
+/* ========== Page Desing css ========= */
+/* ==================================== */
+#single_page .top_single_page {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#single_page .top_single_page .top_single_page_title>h1 {
+    font-weight: var(--section-title-font-width);
+    font-size: var(--section-title-font-size);
+    color: var(--white-color);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pagination .fa-solid {
+    display: inline-block;
+    padding: 10px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin-left: 6px;
+    transition: 0.5s ease;
+}
+
+.pagination .fa-solid:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination .previous .fa-solid {
+    border-radius: 8px 0 0 8px;
+}
+
+.pagination .next .fa-solid {
+    border-radius: 0 8px 8px 0;
+}
+
+/* =================================== */
+/* ========== About us page ========== */
+/* ==================================== */
+
+
+#single_page_contents {
+    min-height: 60vh;
+    background: red;
+    color: #fff;
+    padding-top: 70px;
+}
+
+/* =================================== */
+/* ========== Contact us form ======== */
+/* ==================================== */
+
+.post_description .contact_form,
+.google_map {
+    background-color: var(--primary-color);
+    padding: 30px;
+    /* border-radius: 10px; */
+    box-shadow: 2px 8px 16px 0px #5b738b33, 0px 0px 2px 0px #5b738b33;
+}
+
+.google_map iframe {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.post_description .contact_form form input,
+.post_description .contact_form form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    resize: none;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+
+.post_description .contact_form form input:last-child {
+    margin-bottom: 0 !important;
+
+}
+
+.post_description .contact_form form input[type="submit"] {
+    color: var(--primary-color);
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+}
+
+.post_description .contact_form form #se:hover {
+    border: 1px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+}
+
+/* Google map */
+
+/* =================================== */
+/* ========== Our Team ==================== */
+/* ==================================== */
+#our_team {
+    margin: 50px 0;
+}
+
+#our_team .our_team {
+    transition: 0.5s ease;
+}
+
+#our_team .our_team .team_image {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+#our_team .our_team .team_image img {
+    object-fit: cover;
+    display: block;
+    height: 250px;
+}
+
+#our_team .our_team .team_image .our_team_social_links {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, -50%);
+    background-color: #0002;
+    transition: 0.5s ease;
+    /* border-radius: 20px; */
+    text-align: center;
+    /* padding: 0 10px; */
+}
+
+#our_team .our_team:hover .team_image .our_team_social_links {
+    bottom: -6px;
+}
+
+#our_team .our_team .team_image .our_team_social_links .fa-brands {
+    color: var(--white-color);
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+
+#our_team .our_team .team_name {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px;
+    text-align: center;
+}
+
+#our_team .our_team .team_name h5 {
+    font-size: var(--title-font-size);
+}
+
+.team_name p {
+    font-size: var(--sub-title-font-size);
+    margin-bottom: 0 !important;
+
+}
+
+#our_team .our_team:hover {
+    box-shadow: 0 0 20px 5px #66595933;
+
+}
+#our_team .tema_description p{
+    color: var();
+}
+
+/* ======================================== */
+/* ========== 404 file not found   ======== */
+/* ======================================== */
+#error_page {
+    min-height: 500px;
+    padding: 90px 0 50px 0;
+}
+
+#error_page .file_not_found .file_not_found {
+    /* height: 400px; */
+    width: 100%;
+
+
+
+}
+
+
+
+#error_page .file_not_found .file_not_found_image img {
+    width: 400px !important;
+    display: block;
+}
+
+.file_not_found_text h3 {
+    color: var(--subtitle-color);
+}
+
+.file_not_found_text a {
+    text-decoration: none;
+
+}
+
+
+/* ======================================== */
+/* ========== Footer   ==================== */
+/* ======================================== */
+
+#footer-section {
+    background-color: #222222;
+}
+
+#footer-section .footer-col .footer-heading h1 {
+    color: #999;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#footer-section .footer_bg {
+    padding: 29px 0 40px 0;
+
+}
+
+#footer-section .footer-col .footer-heading p {
+    color: var(--gray-white-text-color);
+    font-size: var(--sub-title-font-size);
+
+}
+
+#footer-section .footer-col .footer-heading ul {
+    list-style: none;
+    padding: 0 !important;
+}
+
+#footer-section .footer-col .footer-heading ul li {
+    display: block;
+}
+
+#footer-section .footer-col .footer-heading ul li a {
+    color: var(--gray-white-text-color);
+    text-decoration: none;
+    font-size: var(--sub-title-font-size);
+    margin: 10px 0;
+    display: block;
+    transition: 0.5 ease;
+}
+
+#footer-section .footer-col .footer-heading ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =================================== */
+/* ========== Bottom Footer =========== */
+/* ==================================== */
+.bottom-footer {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bottom-footer .social-links i {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    line-height: var(--subtitle-line-height);
+
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+#footer-section .footer-copyright p {
+    color: var(--gray-white-text-color);
+    font-size: var(--sub-title-font-size);
+
+
+}
+
+/* =================================== */
+/* ========== Media Query ============ */
+/* ==================================== */
+@media(max-width: 576px) {
+    .hero-text h1 {
+        color: var(--primary-dark);
+        font-size: 50px;
+    }
+
+    #custom_single_post .top_header .top_header_title .post_title h1 {
+        font-size: 30px;
+    }
+
+    #floating {
+        display: none;
+    }
+    #our_team .our_team .team_image .our_team_social_links{
+        bottom: -114px;
+    }
+}
+
+
